@@ -9,6 +9,7 @@ We are using Python, Pandas functions and methods, and SQLAlchemy to see June an
 - The minimum temperature is 56 F and 64 F in December and June respectively. 
 
 ![June_df](/Resources/June_df.png)  ![Dec_df](/Resources/Dec_df.png)
+
       June df.describe()                  December df.describe()
 
 ## Summary
@@ -23,6 +24,7 @@ june_prcp_temp_df = pd.DataFrame(june_prcp_temp,columns=['date','June Temperatur
 june_prcp_temp_df.describe()
 
 Chart Outcome:
+
 ![Jun_Temp_Prep](/Resources/Jun_Temp_Prep.png)
 
 dec_prcp_temp = session.query(Measurement.date, Measurement.tobs, Measurement.prcp).\
@@ -31,6 +33,7 @@ dec_prcp_temp_df = pd.DataFrame(dec_prcp_temp,columns=['date','Dec Temperature',
 dec_prcp_temp_df.describe()
 
 Chart Outcome:
+
 ![Dec_Temp_Prep](/Resources/Dec_Temp_Prep.png)
 
 ### Additional Query #2: June and December Box and Whisker
